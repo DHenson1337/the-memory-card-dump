@@ -17,6 +17,41 @@ Color Palette */
   --input-bg: #ffffff; /* Form inputs */
   --error-color: #ef4444; /* Error messages */
   --success-color: #10b981; /*  Success messages */
+
+  /* Spacing variables */
+  --spacing-xs: 0.5rem; /* 8px */
+  --spacing-sm: 0.75rem; /* 12px */
+  --spacing-md: 1rem; /* 16px */
+  --spacing-lg: 1.5rem; /* 24px */
+  --spacing-xl: 2rem; /* 32px */
+  --spacing-2xl: 4rem; /* 64px */
+
+  /* Font size variables */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-2xl: 2rem; /* 32px */
+  --font-size-3xl: 3rem; /* 48px */
+
+  /* Border radius variables */
+  --border-radius-sm: 0.25rem; /* 4px */
+  --border-radius: 0.5rem; /* 8px */
+  --border-radius-lg: 1rem; /* 16px */
+
+  /* Form-specific variables */
+  --form-max-width: 700px;
+  --form-input-height: 2.3rem;
+  --form-button-height: 3rem;
+
+  /* Transition variables */
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.2s ease;
+  --transition-slow: 0.3s ease;
+
+  /* Shadow variables */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-focus: 0 0 0 3px rgba(209, 213, 219, 0.1);
 }
 
 /* 

@@ -116,20 +116,23 @@ export default function RegistrationForm() {
   };
 
   return (
-    <div>
+    <div className="form-container">
       {/* {TO DO Styles} */}
-      <h1>Create Your Account</h1>
+      <h1 className="form-title">Create Your Account</h1>
 
       <form onSubmit={handleSubmit}>
         {/* Username section */}
-        <div>
-          <label htmlFor="username">User Name</label>
+        <div className="form-group">
+          <label htmlFor="username" className="form-label">
+            User Name:
+          </label>
           <input
             type="text"
             id="username"
             name="username"
             value={username}
             onChange={handleUsernameChange}
+            className="form-input"
             placeholder="Enter your username"
             required
           />
@@ -140,14 +143,17 @@ export default function RegistrationForm() {
         </div>
 
         {/* Email Section */}
-        <div>
-          <label htmlFor="email">Email</label>
+        <div className="form-group">
+          <label htmlFor="email" className="form-label">
+            Email:
+          </label>
           <input
             type="email"
             id="email"
             name="email"
             value={email}
             onChange={handleEmailChange}
+            className="form-input"
             placeholder="Enter your email"
             required
           />
@@ -156,14 +162,17 @@ export default function RegistrationForm() {
         </div>
 
         {/* Password Section */}
-        <div>
-          <label htmlFor="password">Password</label>
+        <div className="form-group">
+          <label htmlFor="password" className="form-label">
+            Password:
+          </label>
           <input
             type="password"
             id="password"
             name="password"
             value={password}
             onChange={handlePasswordChange}
+            className="form-input"
             placeholder="Enter your password"
             required
           />
@@ -174,14 +183,17 @@ export default function RegistrationForm() {
         </div>
 
         {/* Confirm Password section */}
-        <div>
-          <label htmlFor="confirmPassword">Confirm Password</label>
+        <div className="form-group">
+          <label htmlFor="confirmPassword" className="form-label">
+            Confirm Password:
+          </label>
           <input
             type="password"
             id="confirmPassword"
             name="confirmPassword"
             value={confirmPassword}
             onChange={handleConfirmPasswordChange}
+            className="form-input"
             placeholder="Confirm your password"
             required
           />
@@ -192,14 +204,18 @@ export default function RegistrationForm() {
         </div>
         {/* Submit Button */}
 
-        <button type="submit" disabled={isSubmitting}>
+        <button
+          type="submit"
+          className="form-button-primary"
+          disabled={isSubmitting}
+        >
           {/* Conditional text: Change based on submission state */}
           {isSubmitting ? "Creating Account..." : "Register"}
         </button>
       </form>
 
       {/* Navigation Link */}
-      <div>
+      <div className="form-link">
         Already have an account? <a href="/login"> Login here</a>
       </div>
     </div>
